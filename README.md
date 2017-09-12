@@ -1,5 +1,5 @@
 # PyBind11Test
-Test the bindings between C++ and Python using PyBind11. Wrap multiple C++ classes, create python classes from inherited wrapped C++ classes, overload virtual methods of C++ classes from Python.
+Test the bindings between C++ and Python using PyBind11. Wrap multiple C++ classes, create python classes from inherited wrapped C++ classes, overload virtual methods of C++ classes from Python, convert the Python instance back to the base C++ instance, call the method overloaded from Python in C++.
 
 ## Toolchain
 - GNU 7.1.0
