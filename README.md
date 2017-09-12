@@ -10,6 +10,7 @@ Test the bindings between C++ and Python using PyBind11. Wrap multiple C++ class
 
 ## Building
 #### Building with CMake
+- Add the pybind11 distribution into the root directory
 - Open a command prompt and cd to this projects root directory
 - mkdir build
 - cd build
