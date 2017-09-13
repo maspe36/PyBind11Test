@@ -14,6 +14,8 @@ public:
     std::string getName();
     void setName(std::string newName);
     void printFoo(Foo* foo);
+
+    virtual void Effect();
 private:
     std::string name;
 };

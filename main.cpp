@@ -21,4 +21,16 @@ int main() {
     auto *cls = obj.cast<Card *>();
     cls->printFoo(foo);
     std::cout << "Converted from python!!!!! " << cls->getName() << std::endl;
+
+    py::module exampleCard = py::module::import("exampleCard");
+
+    py::object exCard = exampleCard.attr("Derived")("Example");
+
+    obj.attr("printFoo")(foo);
+
+    auto *cpp = exCard.cast<Card *>();
+    std::cout << "Converted derived from python!!!!! " << cpp->getName() << std::endl;
+
+    std::cout << "virtual override..." << std::endl;
+    cpp->Effect();
 }
